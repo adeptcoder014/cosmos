@@ -97,7 +97,7 @@ export default function TemporaryDrawer(props) {
             }}
           >
             {" "}
-            Clear Digital
+            Cosmos
           </Typography>
         </Box>
         {/* <IconButton
