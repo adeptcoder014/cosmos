@@ -50,6 +50,7 @@ export default function HowItWorks() {
       <Grid container>
         {content.map((x) => (
           <Grid
+          key={x}
             item
             lg={4}
             md={4}
