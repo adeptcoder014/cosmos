@@ -105,17 +105,16 @@ function Header() {
             p: 4,
           }}
         >
-          <Image src="/logo.png" width={70} height={70} />
           <Typography
             sx={{
               fontWeight: "bolder",
               // ml: -2,
               color: "white",
               width: "100%",
-              fontSize: 22,
+              fontSize: 32,
             }}
           >
-            CLEAR DIGITAL
+            Cosmos
           </Typography>
 
           <Box sx={{ ml: 1, display: "flex" }}>

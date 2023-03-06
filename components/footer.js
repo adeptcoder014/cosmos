@@ -10,17 +10,11 @@ import Image from "next/image";
 import EmailIcon from "@mui/icons-material/Email";
 //======================================
 
-const footerDevelopment = [
-  "Product Development",
-  "Web Developement",
-  "App Development",
-  "SAAS Developement",
-  "UI/UX Designing Services",
-];
+const footerDevelopment = ["Natal Astrology", "Prashna Astrology"];
 const footerMarketing = [
-  "Social Media Marketing",
-  "SEO Services",
-  "Digital Marketing Services",
+  "Spiritual Podcast",
+  "Esoteric Sarcasm",
+,
 ];
 const footerCompany = ["About Us", "Portfolio", "Blogs", "Contact"];
 
@@ -107,7 +101,7 @@ export default function Footer() {
                     lineHeight: 5,
                   }}
                 >
-                  Development Services
+                  Astrology Services
                 </Typography>
                 {footerDevelopment.map((x) => (
                   <Box key={x}>
@@ -135,7 +129,7 @@ export default function Footer() {
                     lineHeight: 5,
                   }}
                 >
-                  Marketing Services
+                  Spiritual Services
                 </Typography>
                 {footerMarketing.map((x) => (
                   <Typography
@@ -152,7 +146,7 @@ export default function Footer() {
                 ))}
               </Box>
             </Grid>
-            <Grid item xl={4} lg={4} md={4} sm={12} xs={12}>
+            {/* <Grid item xl={4} lg={4} md={4} sm={12} xs={12}>
               <Box>
                 <Typography
                   sx={{
@@ -177,7 +171,7 @@ export default function Footer() {
                   </Typography>
                 ))}
               </Box>
-            </Grid>
+            </Grid> */}
           </Grid>
         </Grid>
 
