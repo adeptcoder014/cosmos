@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "poppins";
+}
+header {
+  /* width: 100vw; */
+  background-color: transparent;
+  color: red;
+  padding: 30px;
+  box-shadow: 1px 1px 7px 0px #8080804a;
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+@media only screen and (max-width: 1024px) {
+  header {
+    display: none;
+  }
+}
+
+nav {
+  display: flex;
+  /* justify-content: space-between;
+  align-items: space-between; */
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+li {
+  margin-right: 10px;
+  cursor: pointer;
+  list-style: none;
+}
+
+a {
+  color: gray;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 45px;
+  position: relative;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  bottom: 45px;
+  left: 40px;
+  background-color: gray;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.menu {
+  display: none;
+}
+
+.show-menu {
+  font-size: 13px;
+  line-height: 38px;
+  display: block;
+  background-color: #292930;
+  color: white;
+  border-radius: 4px;
+  width: fit-content;
+  padding: 25px;
+  margin-left: 25px;
+  transition: all 1.3s cubic-bezier(0, 0, 0.2, 1);
+  /* margin-left: 100%; */
+}
+@media only screen and (max-width: 1024px) {
+  .show-menu {
+    margin-left: 36%;
+  }
+  .show-markMenu {
+    margin-left: 96%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .show-resMenu {
+    margin-left: 79%;
+  }
+}
+
+.markMenu {
+  display: none;
+}
+
+.show-markMenu {
+  font-size: 13px;
+  line-height: 38px;
+  display: block;
+  background-color: #292930;
+  color: white;
+  border-radius: 4px;
+  width: fit-content;
+  padding: 25px;
+  margin-left: 25px;
+  transition: all 1.3s cubic-bezier(0, 0, 0.2, 1);
+  /* margin-left: 55%; */
+}
+
+.menuRes {
+  display: none;
+}
+
+.show-resMenu {
+  font-size: 13px;
+  line-height: 38px;
+  display: block;
+  background-color: #292930;
+  color: white;
+  border-radius: 4px;
+  width: fit-content;
+  padding: 25px;
+  margin-left: 25px;
+  transition: all 1.3s cubic-bezier(0, 0, 0.2, 1);
+  /* margin-left: 69%; */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.list-item {
+  font-weight: bold;
+}
+.list-item:hover {
+  animation: pulse 1s infinite;
+}
+.marketing {
+}
+
+
+
+.subscribe-box {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.subscribe-box form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.input-group {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-group-addon {
+  background-color: #ccc;
+  color: #333;
+  border: 2px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-box input[type="email"] {
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  font-size: 18px;
+  border: 2px solid #ccc;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+}
+
+.subscribe-box button[type="submit"] {
+  width: 30%;
+  height: 50px;
+  background-color: #5956e9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-bottom: 19px;
+}
